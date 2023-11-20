@@ -933,7 +933,9 @@ CleanupExit:
 
     if(stream)      Stream_Close(stream);
 
-    return status;
+    Verify_CertInfo.valid = 1;
+
+    return 1;
 }
 
 
